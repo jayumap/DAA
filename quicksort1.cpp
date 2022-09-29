@@ -37,22 +37,22 @@ void quickSort(int low, int high, int arr[]){
 }
 
 void dispArray(int lenArr, int arr[]){
-    for(int i=0; i<lenArr; i++){
+    for(int i=1; i<=lenArr; i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
 }
 
 int main(){
-    
+
     int lenArr;
     cout<<"Enter Array Length: ";
     cin>>lenArr;
 
-    int *arr = new int[lenArr];
+    int *arr = new int[lenArr+1];
 
-    
-    for(int i=0; i<lenArr; i++){
+
+    for(int i=1; i<=lenArr; i++){
         cout<<"Enter values: ";
         cin>>arr[i];
     }
@@ -65,5 +65,4 @@ int main(){
 
     cout<<"Array After: ";
     dispArray(lenArr,arr);
-    
 }
